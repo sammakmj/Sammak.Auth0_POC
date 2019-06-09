@@ -1,0 +1,34 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@using System.Security.Claims;
+<div class="jumbotron">
+    <h1>Auth0 SSO using ASP.NET</h1>
+    <p></p>
+
+
+    @if (User.Identity.IsAuthenticated)
+    {
+
+        //authenticated via auth0
+        //var authenticatedViaAuth0 = ClaimsPrincipal.Current.Identities.Any(souce => souce.AuthenticationType.Equals("Auth0"));
+
+        <p>Welcome, @ViewBag.Name!</p>
+        <p>@ViewBag.sso_info</p>
+        <p><a href="/Account/Logout" class="btn btn-primary btn-lg">Logout</a></p>
+    }
+    else
+    {
+        <p>
+            -- click login, should just be a passthrough if logged into domain
+            <br />
+            @Html.ActionLink("Login using Emory Credentials", "Login", "Account", null, new { @class = "btn btn-primary btn-lg" })
+        </p>
+
+        <p>
+            -- user needs to sign up otherwise
+            <br />
+            @Html.ActionLink("Sign Up for An Account", "SignUp", "Account", null, new { @class = "btn btn-primary btn-lg" })
+        </p>
+    }
+</div>

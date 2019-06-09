@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29001.49
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sammak.Auth0_POC", "Sammak.Auth0_POC\Sammak.Auth0_POC.csproj", "{228FA70C-3FF1-41D8-A17F-28879F6BD182}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{228FA70C-3FF1-41D8-A17F-28879F6BD182}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{228FA70C-3FF1-41D8-A17F-28879F6BD182}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{228FA70C-3FF1-41D8-A17F-28879F6BD182}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{228FA70C-3FF1-41D8-A17F-28879F6BD182}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {34483D6C-29EE-4D20-B293-EBF23C9D4A1C}
+	EndGlobalSection
+EndGlobal
